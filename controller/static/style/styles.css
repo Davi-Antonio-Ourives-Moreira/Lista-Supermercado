@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+}
+
+header nav{
+    position: fixed;
+    z-index: 999;
+    width: 100%;
+    background-color: transparent;
+    height: 100px;
+    transition: background-color 0.3s, padding 0.3s;
+}
+
+header nav img{
+    position: relative;
+    left: 4%;
+    top: 20px;
+    width: 250px;
+    transition: width 0.3s;
+    filter: grayscale(100%);
+}
+
+header nav ul{
+    display: flex;
+    position: absolute;
+    right: 10%;
+    top: 50px;
+    transition: top 0.3s;
+}
+
+header nav li{
+    margin-left: 25px;
+    list-style: none;
+}
+
+header nav li a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    transition:  color 0.3s;
+
+    &:hover{
+        color: #cac6c6;
+    }
+}
+
+.background-image{
+    background-image: url("https://img.freepik.com/premium-photo/asian-woman-writing-notes_53876-29700.jpg?w=740");
+    background-size: cover; 
+    width: 100%;
+    height: 695px;
+    background-position: center;
+    color: white; 
+    text-align: center; 
+    background-repeat: no-repeat;
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+}
+
+.background-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 695px;
+    background: rgba(0, 0, 0, 0.5); 
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.background-content{
+    z-index: 99;
+}
+
+.background-content a{
+    width: 160px;
+    height: 40px;
+    line-height: 90px;
+    padding: 20px 20px;
+    margin: 20px;
+    background-color: #181212;
+    color: #FFF;
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial;
+    transition: 0.3s linear;
+    
+    &:hover{
+        background-color: #362a2a;
+        color: gainsboro;
+    }
+}
+
+h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.vantagens{
+    position: relative;
+    top: 50px;
+    text-align: center;
+}
+
+.cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.card{
+    width: 230px;
+    margin: 10px;
+    border: 0.3px solid gray !important;
+}
+
+.card img{
+    width: 100%;
+    height: 200px;
+    border-radius: 0.375rem;
+}
+
+.card p{
+    position: relative;
+    top: 10px;
+}
+
+.funcionamento{
+    text-align: center;
+    position: relative;
+    top: 150px;
+}
+
+.funcionalidades{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.funcao{
+    margin: 10px;
+    border: 0.3px solid gray;
+    border-radius: 5px;
+    width: 300px;
+}
+
+footer{
+    position: relative;
+    top: 230px;
+}
+
+footer p{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+}
+
+.contato{
+    margin: 5px;
+    background-color: #181212;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid rgb(190, 189, 189);
+
+    &:hover{
+        background-color: #362a2a;
+        color: #cac6c6;
+    }
+
+}
+
+.contato a{
+    color: white;
+}
+
+.contato svg{
+    width: 25px; 
+    height: 25px;
+}
+
+
