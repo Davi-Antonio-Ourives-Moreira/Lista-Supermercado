@@ -1,0 +1,1 @@
+from .erros_cadastro import Campo_Cadastro_Vazio, Campo_Cadastro_Nome_Curto, Campo_Cadastro_Nome_Longo, Campo_Cadastro_Senha_Curta, Campo_Cadastro_Senhas_Diferentes, Campo_Cadastro_Email_Inexistente, Campo_Cadastro_Email_Ja_Cadastrado
