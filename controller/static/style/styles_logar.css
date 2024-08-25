@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+}
+
+header{
+    width: 100%;
+    height: 90px;
+    background-color: #2c2525;
+}
+
+header img{
+    position: relative;
+    left: 5%;
+    width: 250px;
+}
+
+h1 p{
+    font-family: "Poppins", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.container_loga{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 50px;
+}
+
+.loga{
+    box-shadow: 0px 0px 18px rgba(0, 0, 0, 0.3);
+    width: 320px;
+    height: 300px;
+    justify-content: center;
+    border-radius: 5px;
+}
+
+.p_email{
+    position: relative;
+    left: 20px;
+    top: 50px;
+    width: 100px;
+}
+
+.input_email{
+    position: relative;
+    left: 20px;
+    top: 50px;
+}
+
+.p_senha{
+    position: relative;
+    left: 20px;
+    top: 70px;
+    width: 100px;
+}
+
+.input_senha{
+    position: relative;
+    left: 20px;
+    top: 70px;
+}
+
+.loga form button{
+    position: relative;
+    left: 20px;
+    top: 90px;
+    border: none;
+    width: 190px;
+    height: 30px;
+    background-color: #e4e4e4;
+    transition: background-color 0.3s;
+
+    &:hover{
+        background-color: #d1d0d0;
+    }
+}
+
+footer{
+    position: relative;
+    top: 80px;
+}
+
+footer p{
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.contatos{
+    display: flex;
+    justify-content: center;
+}
+
+.contato{
+    margin: 5px;
+    background-color: #181212;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    border-radius: 100px;
+    border: 2px solid rgb(190, 189, 189);
+
+    &:hover{
+        background-color: #362a2a;
+        color: #cac6c6;
+    }
+
+}
+
+.contato a{
+    color: white;
+}
+
+.contato svg{
+    width: 25px; 
+    height: 25px;
+}
+
+.alerta{
+    position: absolute;
+    left: 50%;
+    top: 11.5%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease-out;
+}
+
+.alert{
+    height: 50px;
+    width: 300px;
+}
+
+.alerta svg{
+    width: 30px;
+}
+
+.alert div{
+    font-size: 13px;
+}
