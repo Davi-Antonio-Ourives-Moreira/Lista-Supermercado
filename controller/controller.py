@@ -1,5 +1,5 @@
 import flask
-from service import Cadastrar_Usuario
+from service import Cadastrar_Usuario, Logar_Usuario
 
 app = flask.Flask(__name__)
 app.secret_key = "GeeksForGeeks"
@@ -25,3 +25,17 @@ def cadastrar():
                                           confirmar_senha_usuario=input_confirmar_senha)
     
     return cadastrar_usuario.Cadastrar()
+
+@app.get("/logar_usuario")
+def pagina_logar_usuario():
+    return flask.render_template("logar_usuario.html")
+
+@app.post("/entrar")
+def logar():
+    input_email = flask.request.form.get("input_email")
+    input_senha = flask.request.form.get("input_senha")
+
+    logar_usuario = Logar_Usuario(email_usuario=input_email,
+                                  senha_usuario=input_senha)
+    
+    return logar_usuario.Logar()
